@@ -1,0 +1,73 @@
+Joystick (ID = 217962035):
+
+	black button 6th byte -> 124-60
+
+	blue button: 5th byte -> 64-0
+
+	red button 5th byte -> 16-0
+
+	inside clicker -> 6th byte 1-0
+
+	scroll wheel -> 5th byte forward=4, backward=1
+
+	forward joystick -> 3rd byte 0-250; 2nd byte (16,80,144,208)
+
+	backward joystick -> 3rd byte 0-250 2nd byte (4,68,132,196)
+
+	left joystick -> 1st byte 0-250, 0th byte (16,144,80,208)
+
+	right all -> 3rd byte 0-250 2nd byte (4,68,196,132)
+
+
+
+
+throttle actuator (ID = 0xCF01A00):
+	in all the way: 
+		0th byte: 0
+		1st byte: 0
+
+	out all the way:
+		0th byte: 255
+		1st byte: 250
+
+
+linear actuator (ID = 216994560):
+	byte 0: position - fine
+	
+	byte 1: bits 0-5: position - coarse
+		bit 6: false
+		bit 7: true
+
+	byte 2: 
+		bit 0: false
+		bit 1: true
+		bit 2: true
+		bit 3: true
+		bit 4: true
+		bit 5: true
+		bit 6: false
+		bit 7: speed - fine
+
+	byte 3: bits 0-3: speed - coarse
+		bits 4: reset
+		bits 5-7: false
+	
+	bytes 4-7: 0
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
